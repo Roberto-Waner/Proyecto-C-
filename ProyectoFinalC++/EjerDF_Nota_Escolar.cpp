@@ -53,29 +53,7 @@ int main(){
 	cout <<"Estudiantes con Notas entre 70 a 79: " << Rg2 <<endl;
 	cout <<"Estudiantes con Notas entre 80 a 89: " << Rg3 <<endl;
 	cout <<"Estudiantes con Notas entre 90 a 100: " << Rg4 <<endl;
-	
-	/*for(int i = 1; i <= 30; i++){
-		string letra;
 		
-		if(nota >= 90 && nota <= 100){
-			letra = "A";
-		
-		}else if(nota >= 80 && nota <= 89){
-			letra = "B";
-		
-		}else if(nota >= 70 && nota <= 79){
-			letra = "C";
-		
-		}else if(nota >= 1 && nota <= 69){
-			letra = "F";
-		
-		}else{
-			letra = "N/A";
-		}
-		cout << "Alumno # " << i <<" letra " << letra <<endl;
-		
-	}*/
-	
 	getch();
 	return 0;
 }

@@ -11,20 +11,21 @@ int main(){
 		
 		cout <<"Programas en C++\n";
 		cout <<"Menu Principal\n\n";
-		cout <<"************************************************************************\n";
+		cout <<"////////////////////////////////////////////////////////////////////////////////////////////////////////////\n";
 		cout <<"1 - Numeros pares descendentes de 1 a 240\n";
 		cout <<"2 - Numeros impares descendentes de 260 hasta 10\n";
-		cout <<"3 - Ingresar por teclado 3 valores\n";
+		cout <<"3 - Ingresar por teclado 3 valores y determinar quien es mayor, medio y menor\n";
 		cout <<"4 - Tabla de multiplicar entre 1 y 12\n";
 		cout <<"5 - Calcularadora de Raiz Cuadrada, Cubica y Cuarta\n";
 		cout <<"6 - Demostración automatica de las 12 tablas de multiplicación\n";
-		cout <<"7 - Solicitud de 10 notas\n";
+		cout <<"7 - Solicitud de 10 notas que muestre quienes sacaron igual o mayor a 70 o menor a 70\n";
 		cout <<"8 - Multiplicación desde 8 hasta 500\n";
-		cout <<"9 - Programa que recive 3 valores\n";
+		cout <<"9 - Programa que recive 3 valores, donde si todos son iguales se imprime\n";
 		cout <<"10 - Programa que solicite un numero entre 1 y 999\n";
 		cout <<"11 - Programa que permite convertir calificaciones en letras\n";
-		cout <<"12 - Salir del programa principal\n";
-		cout <<"************************************************************************\n\n";
+		cout <<"12 - Programa que acepte por teclado 3 numeros y luego realizar las operaciones basicas matematicas\n";
+		cout <<"13 - Salir del programa principal\n";
+		cout <<"///////////////////////////////////////////////////////////////////////////////////////////////////////////\n\n";
 		cout <<"Eliga una opcion: ";
 		cin >> opcion;
 	
@@ -50,9 +51,11 @@ int main(){
 		
 			case 10: cout<<endl; system("EjerDF10C++"); system("cls"); system("Menu");break;
 		
-			case 11: cout<<endl; system("EjerDF7_Nota_Escolar"); system("cls"); system("Menu");break;
+			case 11: cout<<endl; system("EjerDF_Nota_Escolar"); system("cls"); system("Menu");break;
 		
-			case 12: cout<<endl; cout<<"salio del programa"; break;
+			case 12: cout<<endl; system("MatematicaBasic"); system("cls"); system("Menu");break;
+			
+			case 13: cout<<endl; cout<<"salio del programa"; break;
 		
 			default: cout<<endl; cout<<"No existe la opcion a la que desea acepder"; break;
 		}

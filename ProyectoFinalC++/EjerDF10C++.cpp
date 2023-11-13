@@ -5,7 +5,7 @@ using namespace std;
 int main(){
 	int num, dgit = 0;
 	
-	cout <<"Ingrese un numero: "
+	cout <<"Ingrese un numero: ";
 	cin >> num; cout<<endl;
 	
 	if(num != 0){
