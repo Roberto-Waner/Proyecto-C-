@@ -10,13 +10,14 @@ int main() {
 	
 	cout <<"Tabla de multiplicar de " << num <<endl;
 	
-	R = (num * i);
+	
 	
 	if(num < 1 || num > 12){
 		cout <<"Numero invalido. Debe de ser entre 1 a 12.";
 	}else {
 		
 		while(i <= 12) {
+			R = (num * i);
 			cout << num << " x " << i << " = " << R << endl;
 			i++;
 		}
