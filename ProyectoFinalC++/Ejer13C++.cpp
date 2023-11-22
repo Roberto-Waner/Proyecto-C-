@@ -5,11 +5,14 @@ using namespace std;
 long factorial (int N);
 
 int main(){
-	int num; 
-	//long f = 0;
+	int num; //fact; 
+	
+	cout<<"Numeros Factoriales\n\n";
 	
 	cout << "Ingrese un numero: ";
 	cin >> num;
+	
+	//fact = factorial(num);
 	
 	if(num > 0){
 		cout <<"El factorial de " << num <<"! es "<< factorial(num) <<endl;
@@ -17,15 +20,16 @@ int main(){
 	}else{
 		cout<<"numero invalido. Los numeros factoriales no pueden tener numeros negativos" <<endl;
 	}
-	
+	getch();
 	return 0;
 }
 
 long factorial (int N){
+	
 	long factorial = 1;
 	for(int i = 1; i <= N; i++){
 		factorial *= i;
 	}
-	getch();
+	
 	return factorial;
 }

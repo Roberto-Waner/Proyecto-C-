@@ -3,7 +3,6 @@
 using namespace std;
 
 int main() {
-	//cout <<"Programa que cuente los numeros pares descendentes\ndesde el 1 hasta el 240.\nTomar en cuenta que el 1 no es par pero debe salir\nen la lista\n\n\n";
 	
 	int a = 240, b = 1;
 	
@@ -12,9 +11,8 @@ int main() {
 			cout <<"El numero: "<<a; cout<<" es par"<<endl;
 			a--;
 		}else{
-		a--;
+			a--;
 		}
-
 	}
 	cout <<"El numero: " <<b<<" es impar" <<endl;
 	

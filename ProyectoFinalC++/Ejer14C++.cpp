@@ -2,15 +2,14 @@
 #include <conio.h>
 using namespace std;
 
-int par (int x);
+int par (int x, int y);
+int impar (int x, int y);
 
 int main(){
-	int num, num_pares;
+	int min, max, num_pares;
+	min = 5, max = 515;
 	
-	cout<<"Ingrese un numero: ";
-	cin>>num; cout<<endl;
-	
-	num_pares = par(num);
+	num_pares = par(min, max);
 	
 	cout<< num_pares <<endl;
 	
@@ -18,17 +17,18 @@ int main(){
 	return 0;
 }
 
-int par (int x){
+int par (int x, int y){
 	int par = 0;
 	
-	for(int i = x; i <= 515; i++){
-		if(x %2 == 0){
-			par += 2;
-	
-		}else{
+	for(int i = x; i <= y; i++){
+		if(i %2 == 0){
 			par++;
 		}
 	}
 	
 	return par;
+}
+
+int impar (int x, int y){
+	
 }

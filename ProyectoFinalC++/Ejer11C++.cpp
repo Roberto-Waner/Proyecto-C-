@@ -16,7 +16,7 @@ int main(){
 			up++;
 		 }
 	}
-	cout <<"Fin"; cout<<endl;
+	cout<<endl; cout <<"Fin"; cout<<endl;
 	cout<<"Cantidad de numeros ingresados superior a 0: " <<up<<endl;
 	
 		
