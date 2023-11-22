@@ -2,33 +2,38 @@
 #include <conio.h>
 using namespace std;
 
-int par (int x, int y);
-int impar (int x, int y);
+void par (int, int);
+void impar1 (int);
+void impar2 (int);
 
 int main(){
 	int min, max, num_pares;
 	min = 5, max = 515;
+
+	cout<<"Numeros pares entre 5 a 515.\n\n";
 	
-	num_pares = par(min, max);
+	impar1(min);
 	
-	cout<< num_pares <<endl;
+	par(min, max);
+	
+	impar2 (max);
 	
 	getch();
 	return 0;
 }
 
-int par (int x, int y){
-	int par = 0;
-	
+void par (int x, int y){
 	for(int i = x; i <= y; i++){
 		if(i %2 == 0){
-			par++;
+			printf("El numero %d es par.\n", i); //"printf" es similar a cout y "%d" subtituye la variable "i" y se puede incluir dentro de los comentarios
 		}
 	}
-	
-	return par;
 }
 
-int impar (int x, int y){
-	
+void impar1 (int x){
+	printf("El numero %d es impar.\n", x);
+}
+
+void impar2 (int y){
+	printf("El numero %d es impar.\n", y);
 }
