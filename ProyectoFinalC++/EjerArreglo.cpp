@@ -23,8 +23,10 @@ int main (){
 		if (nota[i] == false){
 			cout<<endl; cout<<"Valor de Nota incorecta. Las Notas deben de ser numeros enteros. \n\n";
 			system("pause");
+			system("cls");
 			cin.clear();
-			cin.ignore();
+			cin.sync(); //identifica todas las letras a la vez
+			//cin.ignore(); letra por letra
 			i--;
 			continue;
 		}
@@ -32,7 +34,10 @@ int main (){
 		
 		if(nota[i] < 0 || nota[i] > 100){
 			cout<<endl; cout<<"Valor de Nota incorecta. Las Notas deben de ser de 1 a 100\n\n";
+			system("pause");
+			system("cls");
 			i--;
+			
 		
 		}else if(nota[i] >= 90){   //Escala de calificaciones
 			Rg1++;
